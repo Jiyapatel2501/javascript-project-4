@@ -1797,3 +1797,51 @@ let products = [
         "thumbnail": "https://cdn.dummyjson.com/product-images/groceries/kiwi/thumbnail.webp"
     }
 ];
+function descLength(descrption) {
+    if (descrption.length > 50) {
+        descrption = descrption.substring(0, 50) + "...";
+    }
+    return descrption;
+}
+// console.log(products.description);
+let productCard = document.querySelector('.product');
+products.forEach(element => {
+    element.description = descLength(element.description);
+    productCard.innerHTML += `<div class="col-3">
+                                    <div class="card" style="width: 18rem; height:450px">
+                                        <div class="col-7 mx-auto">
+                                          <div class="category rounded-pill bg-info text-center mt-3 text-light">
+                                            <p>${element.category}</p>
+                                          </div>
+                                        </div>
+                                        <div class="col-5 mx-auto">
+                                            <div class="ratio ratio-1x1">
+                                                <img src="${element.images}" class="card-img-top" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <h6 class="card-title">${element.title}</h6>
+                                            <div class="desc">
+                                                <p class="border-bottom pb-1">
+                                                    ${element.description}
+                                                </p>
+                                            </div>
+                                            <div class="price-discount d-flex justify-content-between">
+                                                <p>Price = ${element.price} $</p>
+                                                <p class="bg-info border rounded-3 py-1 px-2 text-light">${element.discountPercentage}% off</p>
+                                            </div>
+                                            <div class="rating-stock d-flex justify-content-between">
+                                                <p>Ratings</p>
+                                                <p>${element.rating}/5</p>
+                                                
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                              <p>Stock Status</p>
+                                              <p>${element.stock} remain</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>`;
+});

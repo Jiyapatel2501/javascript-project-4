@@ -1,0 +1,35 @@
+:root{
+    --bs-info-rgb: 85, 169, 160;
+}
+
+.btn-info {
+    --bs-btn-bg: #55A9A0;
+    --bs-btn-border-color: #55A9A0;
+}
+.category p{
+    padding: 3px 0;
+}
+/* .desc{
+    font-size: 13px;
+}
+.card-body p{
+    font-size: 15px;
+}
+.card-body{
+    position: relative;
+}
+.card-body:hover{
+    height: 500px;
+}
+.card-content{
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: antiquewhite;
+}
+.card-content:hover{
+    height: 500px;
+    position: absolute;
+    z-index: 100;
+} */
