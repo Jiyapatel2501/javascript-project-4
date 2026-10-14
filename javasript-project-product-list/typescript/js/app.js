@@ -1807,8 +1807,8 @@ function descLength(descrption) {
 let productCard = document.querySelector('.product');
 products.forEach(element => {
     element.description = descLength(element.description);
-    productCard.innerHTML += `<div class="col-3">
-                                    <div class="card" style="width: 18rem; height:450px">
+    productCard.innerHTML += `<div class="col-6 col-lg-4 col-xl-3 px-1">
+                                    <div class="card" style="width: 100%; height:450px">
                                         <div class="col-7 mx-auto">
                                           <div class="category rounded-pill bg-info text-center mt-3 text-light">
                                             <p>${element.category}</p>
@@ -1833,7 +1833,7 @@ products.forEach(element => {
                                             </div>
                                             <div class="rating-stock d-flex justify-content-between">
                                                 <p>Ratings</p>
-                                                <p>${element.rating}/5</p>
+                                                <p><span><i class="ri-star-fill text-warning fs-6 pe-1"></i></span>${element.rating}/5</p>
                                                 
                                             </div>
                                             <div class="d-flex justify-content-between">

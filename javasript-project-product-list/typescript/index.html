@@ -23,13 +23,13 @@
             <div class="row">
                 <div class="head border-bottom">
                     <div class="col-12">
-                        <div class="header d-flex justify-content-between">
+                        <div class="header d-flex justify-content-between pb-1">
                             <div class="col-2">
                                 <div class="logo">
                                     <h3 class="fw-semibold">ShopHub</h3>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 d-none d-md-block">
                                 <div class="search">
                                     <form class="d-flex" role="search">
                                         <input class="form-control me-2" type="search" placeholder="Search Product"
@@ -38,7 +38,7 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 d-none d-md-block">
                                 <div class="nav-icon">
                                     <ul class="d-flex list-unstyled fs-4 justify-content-evenly">
                                         <li><i class="ri-poker-hearts-line"></i></li>
@@ -46,6 +46,9 @@
                                         <li><i class="ri-shopping-cart-2-line"></i></li>
                                     </ul>
                                 </div>
+                            </div>
+                            <div class="d-md-none list-unstyled fs-4">
+                                <li><i class="ri-menu-line"></i></li>
                             </div>
                         </div>
                     </div>
@@ -57,13 +60,13 @@
     <main>
 
         <!-- navbar -->
-        <section class="border-bottom bg-info">
+        <section class="border-bottom bg-info d-none d-md-block">
             <div class="container">
                 <div class="row">
                     <div class="navbar">
-                        <div class="col-8 mx-auto">
+                        <div class="col-md-9 col-lg-8 mx-auto">
                             <nav class="nav-menu py-2">
-                                <ul class="list-unstyled d-flex justify-content-around align-items-center text-light fw-semibold fs-5 m-0">
+                                <ul class="list-unstyled d-flex justify-content-around align-items-center text-light fw-semibold fs-6 m-0">
                                     <li>Home</li>
                                     <li>Product</li>
                                     <li>New Collection</li>
@@ -82,15 +85,15 @@
                 <div class="row">
                     <div class="hero-sec">
                         <div class="col-12">
-                            <div class="hero-card d-flex justify-content-between align-items-center">
-                                <div class="col-5">
-                                    <div class="hero-content">
+                            <div class="hero-card d-flex flex-column flex-md-row flex-column-reverse row-gap-4 justify-content-between align-items-center">
+                                <div class="col-12 col-md-6 col-lg-5">
+                                    <div class="hero-content text-center text-md-start">
                                         <h1 class="display-5 fw-bolder">Your Ultimate Beauty & Cosmetic Hub</h1>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora architecto dolor, reiciendis ex voluptatem dolores! In, recusandae repellat! Dolorum quo nemo, voluptatem repellat non obcaecati?</p>
                                         <button type="button" class="btn btn-info py-2 px-4 text-light">View More</button>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-md-6">
                                     <div class="hero-image">
                                         <img src="https://magicstudio.com/blog/content/images/2023/10/props-product-photography.webp" alt="" class="img-fluid rounded-start-pill">
                                     </div>
