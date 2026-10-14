@@ -9,27 +9,3 @@
 .category p{
     padding: 3px 0;
 }
-/* .desc{
-    font-size: 13px;
-}
-.card-body p{
-    font-size: 15px;
-}
-.card-body{
-    position: relative;
-}
-.card-body:hover{
-    height: 500px;
-}
-.card-content{
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    background-color: antiquewhite;
-}
-.card-content:hover{
-    height: 500px;
-    position: absolute;
-    z-index: 100;
-} */
