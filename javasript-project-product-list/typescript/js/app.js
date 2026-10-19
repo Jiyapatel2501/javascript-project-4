@@ -1803,7 +1803,7 @@ function descLength(descrption) {
     }
     return descrption;
 }
-// console.log(products.description);
+
 let productCard = document.querySelector('.product');
 products.forEach(element => {
     element.description = descLength(element.description);

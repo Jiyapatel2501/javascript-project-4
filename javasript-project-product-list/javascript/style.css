@@ -1,0 +1,21 @@
+:root{
+    --bs-info-rgb: 85, 169, 160;
+}
+
+.btn-info {
+    --bs-btn-bg: #55A9A0;
+    --bs-btn-border-color: #55A9A0;
+}
+.category p{
+    padding: 3px 0;
+}
+
+.card{
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 10px #00000042;
+    translate: 0 -2px;
+}
