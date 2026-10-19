@@ -1816,7 +1816,7 @@ products.forEach(element => {
                                         </div>
                                         <div class="col-5 mx-auto">
                                             <div class="ratio ratio-1x1">
-                                                <img src="${element.images}" class="card-img-top" alt="...">
+                                                <img src="${element.images[0]}" class="card-img-top" alt="...">
                                             </div>
                                         </div>
                                         <div class="card-body">
